@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chidokaemeka.com</title>
-    <link rel="stylesheet" href="style..css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/91fc249f4f.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
@@ -45,7 +45,7 @@
           <div class="text-3">
            And I'm a <span class="typing"></span>
           </div>
-          <a href="#">Hire me</a>
+          <a href="#contact">Hire me</a>
         </div>
       </div>
     </section>
@@ -73,7 +73,7 @@
               " Programming isn't about what you know; it's about what you can
               figure out . ” - Chris Pine
             </p>
-            <a href="#">Download CV</a>
+            <a href="images/EMEKACHIDOKA_CV.pdf" download>Download CV</a>
           </div>
         </div>
       </div>
@@ -277,20 +277,24 @@ As a result of our unique front-end development methodology, we are able to main
           </div>
           <div class="column right">
               <div class="text">Message me</div>
-              <form action="#">
+              <form action="https://formsubmit.co/chidokaemeka@gmail.com" method="POST">
                   <div class="fields">
                       <div class="field name">
                           <input type="text" placeholder="Name" required>
                       </div>
                       <div class="field email">
-                          <input type="email" placeholder="Email" required>
+                          <input type="email" name="email" placeholder="Email" required>
                       </div>
                   </div>
                   <div class="field">
-                      <input type="text" placeholder="Subject" required>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="number" name="number" placeholder="Phone" required>
+                </div>
+                  <div class="field">
+                      <input type="text" name="_subject" placeholder="Subject" required>
                   </div>
                   <div class="field textarea">
-                      <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                      <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
                   </div>
                   <div class="button-area">
                       <button type="submit">Send message</button>
